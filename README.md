@@ -1,12 +1,12 @@
 # Driving Licence AI — Frontend
 
-# # 1. Project Overview
+## 1. Project Overview
 
 The Driving Licence AI frontend is a web application that allows users to upload driving licence documents, review extracted information, edit fields, preview the uploaded document, and ask questions about its contents.
 
 The frontend communicates with a Node.js/Express backend for document processing, OCR, field extraction, and document question answering.
 
-# # 2. Technology Stack
+## 2. Technology Stack
 
 React — Component-based UI development.
 
@@ -22,7 +22,7 @@ Zod — Schema-based validation.
 
 Axios — HTTP requests to backend APIs.
 
-# # 3. Architecture
+## 3. Architecture
 
 The frontend follows a component-based architecture.
 
@@ -58,7 +58,7 @@ The user saves the reviewed fields through the backend API.
 
 The user can ask questions about the document through the chat interface.
 
-# # 4. Setup and Run Instructions
+## 4. Setup and Run Instructions
 
 Prerequisites
 
@@ -93,7 +93,7 @@ To preview the production build locally:
 
 npm run preview
 
-# # 5. AI/LLM Approach
+## 5. AI/LLM Approach
 
 The frontend does not directly call the LLM provider. It communicates with the backend, which handles document extraction and AI-related operations.
 
@@ -105,7 +105,7 @@ LLM mode: Displays structured field extraction returned by the backend when a va
 
 The frontend allows users to review and edit extracted values because automatic extraction can produce incorrect or incomplete results.
 
-# # 6. Key Technical Decisions
+## 6. Key Technical Decisions
 
 React with TypeScript: Improves component organization and catches many type-related errors during development.
 
@@ -125,7 +125,7 @@ Backend-mediated AI calls: Prevents the frontend from exposing the OpenAI API ke
 
 Editable extracted data: Allows users to correct OCR and extraction errors before saving.
 
-# # 7. Known Limitations
+## 7. Known Limitations
 
 Extraction accuracy depends on document quality and backend processing.
 
@@ -141,7 +141,7 @@ Client-side validation does not replace backend validation.
 
 The application should not be considered an official licence verification system.
 
-# # 8. AI Development Tools Used
+## 8. AI Development Tools Used
 
 The following tools may be used during development. Confirm the tools actually used for this submission before finalizing this list.
 
@@ -151,7 +151,7 @@ Vite: Frontend development and build tooling.
 
 Visual Studio Code: Code editing and debugging.
 
-# # 9. Security Considerations
+## 9. Security Considerations
 
 Do not store the OpenAI API key in the frontend environment.
 
